@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="ER-Products.erd">
+	<entities>
+		<data-source id="mariaDB-176fe91a2f6-1ac50950a430ce71">
+			<entity id="1" name="brands" fq-name="products_db.brands" order="0" x="372" y="77">
+				<path name="products_db"/>
+			</entity>
+			<entity id="2" name="madein" fq-name="products_db.madein" order="1" x="372" y="190">
+				<path name="products_db"/>
+			</entity>
+			<entity id="3" name="products" fq-name="products_db.products" order="2" x="224" y="89">
+				<path name="products_db"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="fk_product_brand_id" fq-name="products_db.products.fk_product_brand_id" type="fk" pk-ref="1" fk-ref="3"/>
+		<relation name="fk_product_made_id" fq-name="products_db.products.fk_product_made_id" type="fk" pk-ref="2" fk-ref="3"/>
+	</relations>
+</diagram>
