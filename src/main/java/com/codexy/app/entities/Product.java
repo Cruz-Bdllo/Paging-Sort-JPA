@@ -6,13 +6,15 @@ import javax.persistence.*;
 @Table(name = "products")
 public class Product {
 
+    /* ~ PROPERTIES
+    ======================================= */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")
     private Long productId;
     private String name;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "brand_id")
     private Brand brand;
 
@@ -24,6 +26,9 @@ public class Product {
 
     private int stock;
 
+
+    /* ~ CONSTRUCTORS
+    ======================================= */
     public Product() {
     }
 
@@ -35,6 +40,9 @@ public class Product {
         this.stock = stock;
     }
 
+
+    /* ~ METHODS
+    ======================================= */
     public Long getProductId() {
         return productId;
     }

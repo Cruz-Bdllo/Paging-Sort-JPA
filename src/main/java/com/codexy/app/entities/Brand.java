@@ -5,12 +5,17 @@ import javax.persistence.*;
 @Entity
 @Table(name = "brands")
 public class Brand {
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "brand_id")
     private Integer brandId;
     private String name;
 
+
+    /* ~ CONSTRUCTORS
+    ======================================= */
     public Brand() {
     }
 
@@ -18,6 +23,9 @@ public class Brand {
         this.name = name;
     }
 
+
+    /* ~ METHODS
+    ======================================= */
     public Integer getBrandId() {
         return brandId;
     }

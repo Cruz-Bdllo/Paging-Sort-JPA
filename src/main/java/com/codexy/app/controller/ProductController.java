@@ -15,15 +15,21 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/v1/products")
 public class ProductController {
-    // PROPERTIES
+
+    /*  ~ PROPERTIES
+    ============================================= */
     private final ProductService productService;
 
-    // CONSTRUCTOR
+
+    /*  ~ CONSTRUCTOR
+    ============================================= */
     public ProductController(ProductService productService) {
         this.productService = productService;
     }
 
-    // ENDPOINTS
+
+    /*  ~ ENDPOINTS
+    ============================================= */
     @GetMapping
     public ResponseEntity<Page<Product>> getProducts(ProductPage productPage,
                                                      ProductSearchCriteria searchCriteria) {

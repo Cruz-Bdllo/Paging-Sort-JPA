@@ -2,16 +2,36 @@ package com.codexy.app.search;
 
 import org.springframework.data.domain.Sort;
 
+
+/**
+ * Clase que permite configurar como se retornaran los resultados mediante paginación.
+ */
 public class ProductPage {
 
-    // PROPERTIES
+    /* ~ PROPERTIES
+    ======================================= */
+    /**
+     * Número de la página a la cual se quiere acceder.
+     */
     private int pageNumber = 0;
+    /**
+     * Número de elementos que mostrara cada página
+     */
     private int pageSize = 3;
+
+    /**
+     * Ordenamiento de forma ASCENDENTE o DESCENDENTE.
+     */
     private Sort.Direction directionBy = Sort.Direction.ASC;
+
+    /**
+     * Nombre del campo por el cual se ordenaran los registros.
+     */
     private String sortBy = "productId";
 
 
-    // METHODS
+    /* ~ METHODS
+    ======================================= */
     public int getPageNumber() {
         return pageNumber;
     }

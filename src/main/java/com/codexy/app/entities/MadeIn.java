@@ -5,12 +5,18 @@ import javax.persistence.*;
 @Entity
 @Table(name = "madein")
 public class MadeIn {
+
+    /* ~ PROPERTIES
+    ======================================= */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "madein_id")
     private Integer madeInId;
     private String name;
 
+
+    /* ~ CONSTRUCTORS
+    ======================================= */
     public MadeIn() {
     }
 
@@ -18,6 +24,9 @@ public class MadeIn {
         this.name = name;
     }
 
+
+    /* ~ METHODS
+    ======================================= */
     public Integer getMadeInId() {
         return madeInId;
     }
