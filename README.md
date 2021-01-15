@@ -39,10 +39,10 @@ Las consultas facilmente se podrian realizar con el uso de INNER JOIN atravez de
 El repositorio contiene un archivo llamado **create.sql** dentro de la carpeta __Scripts__ en ella tiene la definición de la Base de datos y las tablas necesarias para correr el repositorio asi como registros de prueba. 
 
 [er]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/Diagrams/diagram.png "Diagrama de Productos"
-[img1]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/img-project/query1.png "Solución a la consulta 1"
-[img2]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/img-project/query2.png "Solución a la consulta 2"
-[img3]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/img-project/query3.png "Solución a la consulta 3"
-[img4]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/img-project/query4.png "Solución a la consulta 4"
+[img1]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/images/query1.png "Solución a la consulta 1"
+[img2]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/images/query2.png "Solución a la consulta 2"
+[img3]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/images/query3.png "Solución a la consulta 3"
+[img4]: https://raw.githubusercontent.com/Cruz-Bdllo/Paging-Sort-JPA/master/images/query4.png "Solución a la consulta 4"
 
 
 
